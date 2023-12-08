@@ -28,6 +28,9 @@ export default function Navbar() {
               <li>
                 <Link href={"/contact"}>Contact Us</Link>
               </li>
+              <li>
+                <Link href={"/blog"}>Blog</Link>
+              </li>
             </ul>
             {/* <button className="group hidden items-center gap-2 rounded-3xl border border-primary px-4 py-2 text-primary transition-all duration-100 hover:bg-primary hover:text-white md:flex">
               <Link href={"/contact"}>
