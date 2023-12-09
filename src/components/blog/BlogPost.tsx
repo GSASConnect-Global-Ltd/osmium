@@ -1,16 +1,6 @@
 
-// interface Post {
-//     _createdAt:string;
-//     _id: string;
-//     _rev: string;
-//     _type: string;
-//     _updatedAt: string;
-//     name: string;
-
 import Link from "next/link";
 
-
-//   }
 interface Post {
     _id: string;
     title: string;
@@ -27,10 +17,11 @@ interface Post {
 
   const BlogPost: React.FC<BlogPostProps> = ({ posts }) => {
     const blogPosts= posts.map((post)=>{
+        
         return (
             <div className="w-[384px] h-[523px] pt-[24px] pr-[24px] pb-[32px] pl-[24px] shadow-xl mr-4" key={post._id}>
                 <div className="">
-                    <img src={post.imageUrl} alt="" className="w-[336px] h-[240]" />
+                    <img src={post.imageUrl} alt="" className="w-[336px] h-[240]" height={336} width={240} />
                     <div className="mt-10">
                  <Link href={`/posts/${post._id}`}><p className="text-[#101828] text-2xl font-semibold"> {post.title}</p></Link>
                         <p className="text-[#667085] text-sm mt-4"></p>

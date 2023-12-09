@@ -29,13 +29,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     body
   }`;
   const post: Post = await sanityClient.fetch(query);
-  console.log(post)
   return { props: { post } };
   
 };
 
 
-const PostPage: React.FC<{ post: Post }> = ({ post }) => (
+const PostPage: React.FC<{ post: Post[] }> = ({ post }:{post:Post[]}) => (
   <div>
     <PostDetails post={post} />
   </div>

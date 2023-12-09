@@ -1,15 +1,5 @@
 import BlogPost from "./BlogPost";
 
-// interface Post {
-//     _createdAt:string;
-//     _id: string;
-//     _rev: string;
-//     _type: string;
-//     _updatedAt: string;
-//     name: string;
-
-
-//   }
 interface Post {
     _id: string;
     title: string;
