@@ -1,5 +1,5 @@
 import BlogHeroText from "./BlogHeroText";
-import BlogNavBar from "./blogNavBar";
+import BlogNavBar from "./BlogNavBar";
 
 function BlogTop() {
     return (
