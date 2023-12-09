@@ -17,6 +17,15 @@ interface Post {
 
   const BlogPost: React.FC<BlogPostProps> = ({ posts }) => {
     const blogPosts= posts.map((post)=>{
+        function getFormattedDate(date:string){
+            const formattedDate=Intl.DateTimeFormat("en-US",{
+                day:"numeric",
+                year:"numeric",
+                month:"long"
+            }).format(new Date(date));
+            return formattedDate;
+        }
+
         
         return (
             <div className="w-[384px] h-[523px] pt-[24px] pr-[24px] pb-[32px] pl-[24px] shadow-xl mr-4" key={post._id}>
@@ -28,7 +37,7 @@ interface Post {
                     </div>
                     <div className="mt-10">
                         <p className="text-sm text-[#101828] font-semibold">{post.authorName}</p>
-                        <p className="text-sm text-[#667085]">{new Date(post.publishedAt).toLocaleDateString()}</p>
+                        <p className="text-sm text-[#667085]">{getFormattedDate(post.publishedAt)}</p>
                     </div>
                 </div>
             </div>)

@@ -21,6 +21,8 @@ export async function getStaticProps() {
         body
       }`;
     const posts: Post[] = await sanityClient.fetch(query);
+    // const posts: Post[] = []
+
   
     return {
       props: {
