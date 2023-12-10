@@ -23,5 +23,5 @@ export default function AppLayout({ title, children }: ILayoutProps) {
 }
 
 AppLayout.defaultProps = {
-  title: "Sterling Technologies & Systems",
+  title: "Osmium Robotics & Renewable Energies Ltds",
 };
