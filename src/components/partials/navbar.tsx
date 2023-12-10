@@ -42,7 +42,7 @@ export default function Navbar() {
               <RightArrow />
             </button> */}
 
-            <ul className="flex items-center gap-8 text-sm md:hidden">
+            <ul className="flex flex-wrap items-center gap-8 text-sm md:hidden">
               <li>
                 <Link href={"/"}>Home</Link>
               </li>
@@ -51,6 +51,12 @@ export default function Navbar() {
               </li>
               <li>
                 <Link href={"/contact"}>Contact Us</Link>
+              </li>
+              <li>
+                <Link href={"/our-people"}>Our People</Link>
+              </li>
+              <li>
+                <Link href={"/blog"}>Blog</Link>
               </li>
             </ul>
           </div>
