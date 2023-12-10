@@ -64,14 +64,15 @@ export default function Navbar() {
               <li>
                 <Link href={"/services"}>Services</Link>
               </li>
-              <li>
-                <Link href={"/contact"}>Contact Us</Link>
-              </li>
+
               <li>
                 <Link href={"/our-people"}>Our People</Link>
               </li>
               <li>
                 <Link href={"/blog"}>Blog</Link>
+              </li>
+              <li>
+                <Link href={"/contact"}>Contact Us</Link>
               </li>
             </ul>
           </div>
