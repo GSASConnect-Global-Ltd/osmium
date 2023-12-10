@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import Link from "next/link";
 import { Container } from "@/layouts";
-import { RightArrow } from "../icons";
+import { motion } from "framer-motion";
+import { HamburgerMenu, Close } from "../icons";
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMobileMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
     <nav className="fixed z-30 w-full bg-primary py-6 text-white">
       <Container>
@@ -35,14 +40,24 @@ export default function Navbar() {
                 <Link href={"/blog"}>Blog</Link>
               </li>
             </ul>
-            {/* <button className="group hidden items-center gap-2 rounded-3xl border border-primary px-4 py-2 text-primary transition-all duration-100 hover:bg-primary hover:text-white md:flex">
-              <Link href={"/contact"}>
-                <span className="font-semibold">Get in Touch</span>
-              </Link>{" "}
-              <RightArrow />
-            </button> */}
 
-            <ul className="flex flex-wrap items-center gap-8 text-sm md:hidden">
+            <button
+              onClick={toggleMobileMenu}
+              className="rounded-[4px] bg-primary px-2 py-2.5 font-semibold text-white transition-all duration-300 hover:bg-primary/80 lg:hidden"
+            >
+              {!menuOpen ? <HamburgerMenu /> : <Close />}
+            </button>
+          </div>
+        </div>
+      </Container>
+      {menuOpen && (
+        <motion.div
+          animate={{ x: 0 }}
+          initial={{ x: -250 }}
+          className="z-10 mx-auto px-6  sm:max-w-2xl sm:px-8 md:max-w-3xl"
+        >
+          <div className="w-full space-y-7 text-white py-6  lg:hidden">
+            <ul className="space-y-7">
               <li>
                 <Link href={"/"}>Home</Link>
               </li>
@@ -60,8 +75,8 @@ export default function Navbar() {
               </li>
             </ul>
           </div>
-        </div>
-      </Container>
+        </motion.div>
+      )}
     </nav>
   );
 }

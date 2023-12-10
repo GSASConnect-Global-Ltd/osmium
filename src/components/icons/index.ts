@@ -4,5 +4,16 @@ import CardIcon from "./card-icon";
 import Facebook from "./facebook";
 import LinkedIn from "./linkedin";
 import Twitter from "./twitter";
+import HamburgerMenu from "./hamburger-menu";
+import Close from "./close";
 
-export { RightArrow, RightArrowCTA, CardIcon, Facebook, LinkedIn, Twitter };
+export {
+  RightArrow,
+  RightArrowCTA,
+  CardIcon,
+  Facebook,
+  LinkedIn,
+  Twitter,
+  HamburgerMenu,
+  Close,
+};
