@@ -6,7 +6,7 @@ import { AnimateY } from "../partials";
 
 export default function WhyChooseUs() {
   return (
-    <section className=" bg-secondary">
+    <section className=" bg-primary">
       <Container>
         <div className="space-y-20 py-20">
           <h1 className="text-heading-three font-semibold text-white lg:text-heading-two">

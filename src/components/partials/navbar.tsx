@@ -5,7 +5,7 @@ import { RightArrow } from "../icons";
 
 export default function Navbar() {
   return (
-    <nav className="fixed z-30 w-full bg-secondary py-6 text-white">
+    <nav className="fixed z-30 w-full bg-primary py-6 text-white">
       <Container>
         <div className="flex items-center justify-between">
           <div className="flex gap-10">
@@ -26,7 +26,7 @@ export default function Navbar() {
                 <Link href={"/services"}>Services</Link>
               </li>
               <li>
-                <Link href={"/about-us"}>About Us</Link>
+                <Link href={"/our-people"}>Our People</Link>
               </li>
               <li>
                 <Link href={"/contact"}>Contact Us</Link>
