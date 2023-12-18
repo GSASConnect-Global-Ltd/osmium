@@ -8,7 +8,6 @@ interface IServiceCard {
 }
 
 export default function ServiceCard(props: IServiceCard) {
-  console.log(props.bg);
   return (
     <div
       className={`space-y-6 h-full bg-white p-10 bg-panels bg-no-repeat object-cover`}

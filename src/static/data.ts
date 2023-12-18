@@ -89,3 +89,30 @@ export const reasonList = [
     stagger: 0.2,
   },
 ];
+
+export const projectList = [
+  {
+    id: 1,
+    title: "GreenWhich Solar Installation",
+    body: "We supply high quality solar panels, inverters and batteries designed by leading and highly-reputable global manufacturers with long warranty periods to protect you. ",
+    img: "/images/panels.png",
+  },
+  {
+    id: 2,
+    title: "London Robotics Service",
+    body: "Developing and implementing AI algorithms, creating robotic systems for various applications",
+    img: "/images/robotics.png",
+  },
+  {
+    id: 3,
+    title: "Automation Project",
+    body: "We provide systems for smart lighting, climate control, security, entertainment, and other connected devices that can be managed remotely through a central hub or mobile app.",
+    img: "/images/home-automation.png",
+  },
+  {
+    id: 4,
+    title: "Transportation Project",
+    body: "We provide services related to connected vehicles, traffic management systems, intelligent transportation networks, and the integration of emerging technologies like electric and autonomous vehicles.",
+    img: "/images/transportation.png",
+  },
+];
